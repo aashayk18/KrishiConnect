@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiConnect</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="" class="navbar-logo" alt="logo image" />
+        <button class="navbar-toggler nav-custom" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <form id="searchForm" class="d-flex" autocomplete="off">
+                        <input class="form-control me-2 search-bar" type="search" id="searchTerm"
+                            placeholder="Search Pet" aria-label="Search">
+                        <button class="btn btn-outline-dark search-button" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="input-section">
+
+            <section class="logo-section">
+                <img src="path/to/your/logo.png" alt="Logo" class="img-fluid">
+            </section>
+
+            <div class="row g-3">
+
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="locationDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Location
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <input type="text" class="form-control datepicker" placeholder="Select Date" readonly>
+                        <button class="btn btn-outline-dark" type="button">
+                            <i class="bi bi-calendar"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dateDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Temperature
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dateDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Moisture
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dateDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NPK
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="search-container">
+                <button class="search" onclick="search()" class="btn btn-outline-dark mt-3">SEARCH</button>
+            </div>
+
+        </section>
+
+        <section class="output-section">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 KrishiConnect</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true
+            });
+        });
+    </script>
+
+</body>
+
+</html>
