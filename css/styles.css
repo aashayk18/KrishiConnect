@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -24,9 +25,16 @@ body {
     margin: 0;
     padding: 0;
     color: #092e20;
+    background-image: url('C:\Users\Ananya\Desktop\KrishiConnect\images\krishiconnect_bg.png');
+    /* Adjust background properties */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
 }
 
-header{
+header {
     background-color: #788d24;
     color: #fff;
     text-align: center;
@@ -37,11 +45,13 @@ main {
     padding: 20px;
 }
 
-.input-section, .output-section {
+.input-section,
+.output-section {
     margin-bottom: 20px;
 }
 
-input[type="text"], button {
+input[type="text"],
+button {
     padding: 8px;
     margin: 5px;
 }
@@ -50,7 +60,8 @@ button {
     cursor: pointer;
     background-color: #788d24;
     color: #fff;
-    border: none;color: #092e20;
+    border: none;
+    color: #092e20;
 }
 
 button:hover {
@@ -67,10 +78,10 @@ button:hover {
 }
 
 .navbar-logo {
-    width: 200px;
-    height: 50px;
-    margin-top: 15px;
-    margin-left: -10px;
+    width: 175px;
+    height: 100px;
+    margin-top: -10px;
+    margin-left: 10px;
 }
 
 .nav-item {
@@ -103,9 +114,23 @@ button:hover {
 .search-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
+    /* Adjust as needed */
 }
 
 .search {
-    border-radius: 5px; /* Rounded borders */
+    border-radius: 15px;
+    /* Rounded borders */
+}
+
+.img-fluid {
+    margin-bottom: -50px;
+    margin-top: -20px;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    /* Aligns content to the center horizontally */
+    align-items: center;
 }
