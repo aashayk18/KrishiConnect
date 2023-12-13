@@ -25,12 +25,9 @@ body {
     margin: 0;
     padding: 0;
     color: #092e20;
-    background-image: url('C:\Users\Ananya\Desktop\KrishiConnect\images\krishiconnect_bg.png');
-    /* Adjust background properties */
+    background-image: url('../images/krishiconnect_bg.png');
     background-size: cover;
-    /* Cover the entire viewport */
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
 }
 
@@ -90,8 +87,8 @@ button:hover {
 }
 
 .nav-link {
-    font-size: 1.2rem;
-    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-family: "Arial";
     font-weight: 400;
     color: black;
 }
