@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/cities.js"></script>
+    <script src="https://kit.fontawesome.com/436abfd8f9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,12 +30,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#login">
-                        <i class="bi bi-person"></i> <!-- Replace with your login icon -->
+                        <i class="fa-solid fa-user"></i>
+                        <!-- Replace with your login icon -->
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Language
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -54,7 +55,7 @@
                 <img src="./images/krishiconnect.png" alt="Logo" class="img-fluid" width="850px" height="600px">
             </section>
 
-            <div class="row g-3">
+            <div class="row gx-2 custom-gutter">
 
                 <div class="col">
                     <div class="dropdown">
@@ -114,12 +115,25 @@
 
         </section>
 
-        <section class="output-section">
-
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" id="image-container">
+                        <img src="./images/krishiconnect - crops.png" alt="Image" id="about-image">
+                    </div>
+                    <div class="col-md-6" id="text-container">
+                        <div class="content">
+                            <h2>About Us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ipsum tempus, malesuada justo at, volutpat nunc. Sed nec hendrerit sem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <footer>
+    <footer id="contact">
         <p>&copy; 2023 KrishiConnect</p>
     </footer>
 
