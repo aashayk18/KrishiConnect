@@ -14,7 +14,6 @@ main {
 
 footer {
     flex-shrink: 0;
-    justify-content: right;
     background-color: #788d24;
     color: #fff;
     padding: 15px 0;
@@ -29,6 +28,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 header {
@@ -58,7 +58,8 @@ button {
     background-color: #788d24;
     color: #fff;
     border: none;
-    color: #092e20;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 button:hover {
@@ -93,6 +94,10 @@ button:hover {
     color: black;
 }
 
+.nav-link :hover {
+    color: #788d24;
+}
+
 #searchForm {
     margin-right: -10px;
 }
@@ -118,6 +123,8 @@ button:hover {
 
 .search {
     border-radius: 15px;
+    width: 160px;
+    height: 50px;
     /* Rounded borders */
 }
 
@@ -137,40 +144,35 @@ button:hover {
 /* Add this CSS in your stylesheet or in a style tag within the HTML */
 
 .about-section {
-    /* You can set styles for the section if needed */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    /* Adjust as needed */
     align-items: center;
-    /* Adjust as needed */
 }
 
 #image-container {
     flex: 1;
-    /* Adjust as needed */
     max-width: 50%;
-    /* Adjust as needed */
+    margin-left: -60px;
+    margin-right: 80px;
 }
 
 #about-image {
-    width: 100%;
-    /* This ensures the image takes the full width of its container */
-    height: auto;
-    /* To maintain the aspect ratio */
+    width: 700px;
+    height: 400px;
 }
 
 #text-container {
     flex: 1;
-    /* Adjust as needed */
     max-width: 50%;
-    /* Adjust as needed */
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 .content {
-    /* Add any additional styles for the content */
+    
 }
 
 .custom-gutter .row>div[class^="col-"] {
@@ -178,4 +180,32 @@ button:hover {
     /* Adjust the spacing as needed */
     padding-left: 0px;
     /* Adjust the spacing as needed */
+}
+
+/* Adjustments for footer and its children */
+#contact {
+    background-color: #788d24; /* Optional: Background color for the footer */
+    padding: 10px; /* Optional: Add padding to the footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* Styles for left section within the footer */
+.footer-left {
+    /* You can add styles specific to the left section here */
+}
+
+/* Styles for right section within the footer */
+.footer-right {
+    /* You can add styles specific to the right section here */
+}
+
+a {
+    color: #fff; /* Set your desired color using hexadecimal, RGB, or color names */
+}
+
+a :hover {
+    color: black;
 }
