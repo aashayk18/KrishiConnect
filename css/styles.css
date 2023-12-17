@@ -189,7 +189,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 88px;
 }
 
 /* Styles for left section within the footer */
@@ -199,7 +199,7 @@ button:hover {
 
 /* Styles for right section within the footer */
 .footer-right {
-    /* You can add styles specific to the right section here */
+    margin-right: 20px;
 }
 
 a {
@@ -208,4 +208,8 @@ a {
 
 a :hover {
     color: black;
+}
+
+.team {
+    margin-left: 80px;
 }
