@@ -94,10 +94,6 @@ button:hover {
     color: black;
 }
 
-.nav-link:hover {
-    color: #788d24; /* Set your desired hover color */
-}
-
 #searchForm {
     margin-right: -10px;
 }
@@ -110,6 +106,23 @@ button:hover {
     color: #788d24;
 }
 
+.nav-item a.nav-link:active {
+    color: #788d24/* Your desired color */;
+}
+
+.nav-item a.nav-link {
+    color: black/* Your default color */;
+}
+
+.nav-item a.nav-link:hover {
+    color: #788d24 /* Your hover color */;
+}
+
+.nav-item a.nav-link:active,
+.nav-item a.nav-link:focus {
+    color: #788d24/* Your active/focus color */;
+}
+
 .dropdown {
     margin-right: 5px;
     min-width: unset;
@@ -117,11 +130,15 @@ button:hover {
     flex-wrap: nowrap;
 }
 
+.dropdown-menu {
+    min-width: 60px;
+}
+
 .search-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 160px;
     /* Adjust as needed */
 }
 
@@ -142,12 +159,14 @@ button:hover {
     justify-content: center;
     /* Aligns content to the center horizontally */
     align-items: center;
+    margin-top: -20px;
 }
 
 
 /* Add this CSS in your stylesheet or in a style tag within the HTML */
 
 .about-section {
+    margin-bottom: 100px;
 }
 
 .container {
