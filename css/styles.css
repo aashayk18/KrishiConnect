@@ -204,10 +204,19 @@ button:hover {
 
 .content {}
 
-.custom-gutter .row>div[class^="col-"] {
-    margin-right: -10px;
-    margin-left: -10px;
-    align-items: center;
+.custom-gutter > .row > [class^="col-"] {
+    --bs-gutter-x: 9rem;
+}
+
+.input-group {
+    width: 50%;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    width: 50%;
 }
 
 /* Adjustments for footer and its children */
