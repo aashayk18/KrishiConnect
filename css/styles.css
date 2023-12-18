@@ -94,8 +94,8 @@ button:hover {
     color: black;
 }
 
-.nav-link :hover {
-    color: #788d24;
+.nav-link:hover {
+    color: #788d24; /* Set your desired hover color */
 }
 
 #searchForm {
@@ -104,6 +104,10 @@ button:hover {
 
 .navbar-dark .navbar-nav .nav-link {
     color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #788d24;
 }
 
 .dropdown {
@@ -212,4 +216,28 @@ a :hover {
 
 .team {
     margin-left: 80px;
+}
+
+/* CSS for the team members section */
+.team-members {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between images */
+    align-items: center;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+/* CSS for individual circular images */
+.team-members a {
+    display: block;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 5px; 
+}
+
+.team-members img {
+    width: 100%; 
+    height: auto; 
 }
