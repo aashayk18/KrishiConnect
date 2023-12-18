@@ -38,7 +38,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#login">
-                        <!-- <i class="fa-solid fa-user"></i> -->
                         Login
                     </a>
                 </li>
@@ -66,44 +65,60 @@
             <div class="row gx-2 custom-gutter">
 
                 <div class="col">
-                    <div class="dropdown">
-                        <!-- <button class="btn btn-outline-dark dropdown-toggle" type="button" id="locationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            Location
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="locationDropdown" id="cityDropdown">
-                        </ul> -->
-
+                    <div class="location">
                         <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
                             class="form-control" required></select>
                         <select id="state" class="form-control" required></select>
                         <script language="javascript">
                             print_state("sts");
                         </script>
-
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="input-group">
                         <input type="text" class="form-control datepicker" placeholder="Select Date" readonly>
-                        <button class="btn btn-outline-dark" type="button">
-                            <i class="bi bi-calendar"></i>
-                        </button>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="dropdown">
-                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dateDropdown"
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="tempDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Temperature
                         </button>
+                        <ul class="dropdown-menu" aria-labelledby="tempDropdown">
+                            <li>
+                                <form class="px-4 py-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="temperature" id="celsius"
+                                            value="celsius">
+                                        <label class="form-check-label" for="celsius">
+                                            Celsius
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="temperature" id="fahrenheit"
+                                            value="fahrenheit">
+                                        <label class="form-check-label" for="fahrenheit">
+                                            Fahrenheit
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="temperatureValue" class="form-label">Value</label>
+                                        <input type="text" class="form-control" id="temperatureValue">
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Done</button>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
+
                 <div class="col">
                     <div class="dropdown">
-                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dateDropdown"
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="moistDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Moisture
                         </button>
@@ -112,7 +127,7 @@
 
                 <div class="col">
                     <div class="dropdown">
-                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dateDropdown"
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="npkDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             NPK
                         </button>
@@ -177,19 +192,14 @@
         </div>
     </footer>
 
-
     <script src="script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-
-    <!-- Bootstrap JavaScript (including bundle) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    
     <script>
         $(document).ready(function () {
             $('.datepicker').datepicker({
@@ -198,25 +208,6 @@
             });
         });
     </script>
-
-    <script>
-        // Fetch city data from the Indian Cities API
-        fetch('https://indian-cities-api-nocbegfhqg.now.sh/cities')
-            .then(response => response.json())
-            .then(data => {
-                const cityDropdown = document.getElementById('cityDropdown');
-
-                // Add each city as a dropdown item
-                data.forEach(city => {
-                    const listItem = document.createElement('li');
-                    listItem.innerHTML = `<a class="dropdown-item" href="#">${city.City}</a>`;
-                    cityDropdown.appendChild(listItem);
-                });
-            })
-            .catch(error => console.error('Error fetching city data:', error));
-    </script>
-
-
 
 </body>
 
