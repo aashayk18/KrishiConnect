@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 header {
@@ -107,20 +107,28 @@ button:hover {
 }
 
 .nav-item a.nav-link:active {
-    color: #788d24/* Your desired color */;
+    color: #788d24
+        /* Your desired color */
+    ;
 }
 
 .nav-item a.nav-link {
-    color: black/* Your default color */;
+    color: black
+        /* Your default color */
+    ;
 }
 
 .nav-item a.nav-link:hover {
-    color: #788d24 /* Your hover color */;
+    color: #788d24
+        /* Your hover color */
+    ;
 }
 
 .nav-item a.nav-link:active,
 .nav-item a.nav-link:focus {
-    color: #788d24/* Your active/focus color */;
+    color: #788d24
+        /* Your active/focus color */
+    ;
 }
 
 .dropdown {
@@ -194,9 +202,7 @@ button:hover {
     margin-top: 20px;
 }
 
-.content {
-    
-}
+.content {}
 
 .custom-gutter .row>div[class^="col-"] {
     padding-right: 0px;
@@ -208,8 +214,10 @@ button:hover {
 
 /* Adjustments for footer and its children */
 #contact {
-    background-color: #788d24; /* Optional: Background color for the footer */
-    padding: 10px; /* Optional: Add padding to the footer */
+    background-color: #788d24;
+    /* Optional: Background color for the footer */
+    padding: 10px;
+    /* Optional: Add padding to the footer */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -229,7 +237,8 @@ button:hover {
 }
 
 a {
-    color: #fff; /* Set your desired color using hexadecimal, RGB, or color names */
+    color: #fff;
+    /* Set your desired color using hexadecimal, RGB, or color names */
 }
 
 a :hover {
@@ -243,7 +252,8 @@ a :hover {
 /* CSS for the team members section */
 .team-members {
     display: flex;
-    justify-content: space-around; /* Adjust spacing between images */
+    justify-content: space-around;
+    /* Adjust spacing between images */
     align-items: center;
     margin-left: 15px;
     margin-top: -10px;
@@ -252,19 +262,24 @@ a :hover {
 /* CSS for individual circular images */
 .team-members a {
     display: block;
-    width: 30px; 
-    height: 30px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin: 5px; 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px;
 }
 
 .team-members img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 .location {
     margin-top: 5px;
     margin-right: 10px;
+}
+
+
+.dropdown-menu.show {
+    min-width: 200px !important;
 }
