@@ -205,10 +205,8 @@ button:hover {
 .content {}
 
 .custom-gutter .row>div[class^="col-"] {
-    padding-right: 0px;
-    /* Adjust the spacing as needed */
-    padding-left: 0px;
-    /* Adjust the spacing as needed */
+    margin-right: -10px;
+    margin-left: -10px;
     align-items: center;
 }
 
