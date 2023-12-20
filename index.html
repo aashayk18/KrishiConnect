@@ -39,8 +39,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#login">Login</a>
                 </li>
-                <li class="nav-item dropdown"> 
-                    <div class="dropdown"> 
+                <li class="nav-item dropdown">
+                    <div class="dropdown">
                         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="languageDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Language
@@ -54,7 +54,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <main>
         <section class="input-section">
 
@@ -66,12 +66,18 @@
 
                 <div class="col">
                     <div class="location">
-                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
-                            class="form-control" required></select>
-                        <select id="state" class="form-control" required></select>
-                        <script language="javascript">
-                            print_state("sts");
-                        </script>
+                        <div class="row">
+                            <div class="col">
+                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
+                                    class="form-control" required></select>
+                            </div>
+                            <div>
+                                <select id="state" class="form-control" required></select>
+                            </div>
+                            <script language="javascript">
+                                print_state("sts");
+                            </script>
+                        </div>
                     </div>
                 </div>
 
@@ -140,39 +146,39 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col">
-                <div class="dropdown">
-                    <button class="btn btn-outline-dark dropdown-toggle" type="button" id="npkDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        NPK
-                    </button>
-                    <ul class="dropdown-menu p-3" aria-labelledby="npkDropdown" style="width: 200px;">
-                        <li>
-                            <div class="mb-3">
-                                <label for="nitrogen" class="form-label">Nitrogen</label>
-                                <input type="text" class="form-control" id="nitrogen">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="mb-3">
-                                <label for="phosphorous" class="form-label">Phosphorous</label>
-                                <input type="text" class="form-control" id="phosphorous">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="mb-3">
-                                <label for="potassium" class="form-label">Potassium</label>
-                                <input type="text" class="form-control" id="potassium">
-                            </div>
-                        </li>
-                        <li>
-                            <button class="btn btn-outline-success">Submit</button>
-                        </li>
-                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="npkDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NPK
+                        </button>
+                        <ul class="dropdown-menu p-3" aria-labelledby="npkDropdown" style="width: 200px;">
+                            <li>
+                                <div class="mb-3">
+                                    <label for="nitrogen" class="form-label">Nitrogen</label>
+                                    <input type="text" class="form-control" id="nitrogen">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mb-3">
+                                    <label for="phosphorous" class="form-label">Phosphorous</label>
+                                    <input type="text" class="form-control" id="phosphorous">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mb-3">
+                                    <label for="potassium" class="form-label">Potassium</label>
+                                    <input type="text" class="form-control" id="potassium">
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-outline-success">Submit</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-                
+
             </div>
 
             <div class="search-container">

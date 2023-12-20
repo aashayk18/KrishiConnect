@@ -212,6 +212,12 @@ button:hover {
     width: 50%;
 }
 
+.datepicker {
+        background-color: white !important;
+        text-align: center;
+        color: black !important;
+    }
+
 .form-control {
     background-color: #fff;
     border: 1px solid black;
