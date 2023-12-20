@@ -233,7 +233,7 @@ div.custom-row-class.row {
     background-color: #fff;
     border: 1px solid black;
     color: black;
-    width: 50%;
+    width: 120px;
     height: 40px;
     text-align: center;
 }
@@ -312,5 +312,6 @@ a :hover {
 }
 
 .dropdown .location {
-    margin-top: 30px;
+    margin-top: 25px;
+    justify-content: space-between;
 }
