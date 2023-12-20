@@ -1,3 +1,1 @@
 # KrishiConnect
-hi
-bye
