@@ -293,6 +293,7 @@ a :hover {
 }
 
 
-.dropdown-menu.show {
-    min-width: 200px !important;
+.dropdown-menu {
+    min-width: 145px !important;
+    margin-top: 50px;
 }
