@@ -204,9 +204,20 @@ button:hover {
 
 .content {}
 
-.custom-gutter > .row > [class^="col-"] {
-    --bs-gutter-x: 9rem;
+/* Custom CSS to override default row styling */
+div.custom-row-class.row {
+    --bs-gutter-x: 0.5rem; /* Your desired gutter x value */
+    --bs-gutter-y: 0; /* Your desired gutter y value */
+    /* Other styles */
+    display: flex;
+    flex-wrap: nowrap !important;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    align-items: center;
+    align-content: center;
 }
+
 
 .input-group {
     width: 50%;
@@ -223,6 +234,8 @@ button:hover {
     border: 1px solid black;
     color: black;
     width: 50%;
+    height: 40px;
+    text-align: center;
 }
 
 /* Adjustments for footer and its children */
@@ -296,4 +309,8 @@ a :hover {
 .dropdown-menu {
     min-width: 145px !important;
     margin-top: 50px;
+}
+
+.dropdown .location {
+    margin-top: 30px;
 }

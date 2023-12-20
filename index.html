@@ -74,32 +74,26 @@
                 <img src="./images/krishiconnect.png" alt="Logo" class="img-fluid" width="850px" height="600px">
             </section>
 
-            <div class="row custom-gutter">
+            <div class="custom-row-class row" style="flex-wrap: nowrap;">
 
-                <div class="col">
-                    <div class="location">
-                        <div class="row">
-                            <div class="col">
-                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
-                                    class="form-control" required></select>
-                            </div>
-                            <div>
-                                <select id="state" class="form-control" required></select>
-                            </div>
-                            <script language="javascript">
-                                print_state("sts");
-                            </script>
-                        </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="dropdown location">
+                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" class="form-control" required></select>
+                        <select id="state" class="form-control" required></select>
+                        <script language="javascript">
+                            print_state("sts");
+                        </script>
+
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                     <div class="input-group">
                         <input type="text" class="form-control datepicker" placeholder="Select Date" readonly>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                     <div class="dropdown">
                         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="tempDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -134,7 +128,7 @@
                 </div>
 
 
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                     <div class="dropdown">
                         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="moistDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -144,9 +138,8 @@
                             <form class="px-4 py-3">
                                 <div class="row">
                                     <div class="col">
-                                        <label for="moistureValue" class="form-label">Value</label>
                                         <input type="text" class="form-control" id="moistureValue">
-                                        <p>units</p>
+                                        <label for="moistureValue" class="form-label">units</label>
                                     </div>
                                 </div>
                                 <div class="row mt-2">
@@ -159,35 +152,27 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                     <div class="dropdown">
-                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="npkDropdown"
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="moistDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            NPK
+                            Humidity
                         </button>
-                        <ul class="dropdown-menu p-3" aria-labelledby="npkDropdown" style="width: 200px;">
-                            <li>
-                                <div class="mb-3">
-                                    <label for="nitrogen" class="form-label">Nitrogen</label>
-                                    <input type="text" class="form-control" id="nitrogen">
+                        <div class="dropdown-menu" aria-labelledby="moistDropdown">
+                            <form class="px-4 py-3">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="moistureValue">
+                                        <label for="moistureValue" class="form-label">units</label>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="mb-3">
-                                    <label for="phosphorous" class="form-label">Phosphorous</label>
-                                    <input type="text" class="form-control" id="phosphorous">
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-outline-success">Submit</button>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="mb-3">
-                                    <label for="potassium" class="form-label">Potassium</label>
-                                    <input type="text" class="form-control" id="potassium">
-                                </div>
-                            </li>
-                            <li>
-                                <button class="btn btn-outline-success">Submit</button>
-                            </li>
-                        </ul>
+                            </form>
+                        </div>
                     </div>
                 </div>
 
@@ -213,8 +198,8 @@
                                 optimize their crop yields effectively. We recognized the critical need for a tool that
                                 marries technological innovation with agricultural expertise, enabling farmers to make
                                 informed decisions. Motivated by the aim to revolutionize farming practices, our team
-                                embarked on developing a software tool that analyzes key growth factors—moisture,
-                                temperature, and nutrients—to predict the most suitable crop for specific farming
+                                embarked on developing a software tool that analyzes key growth factors — moisture,
+                                temperature, and humidity — to predict the most suitable crop for specific farming
                                 conditions. Our motivation stems from the desire to bridge the gap between traditional
                                 farming methods and cutting-edge technology, providing farmers with tailored
                                 recommendations, insights about their land, and best practices for crop cultivation.
